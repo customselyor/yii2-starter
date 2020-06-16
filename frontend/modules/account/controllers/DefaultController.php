@@ -75,25 +75,25 @@ class DefaultController extends Controller
         }
     }
 
-//    /**
-//     * Lists all User models.
-//     *
-//     * @return mixed
-//     */
-//    public function actionUsers()
-//    {
-//        $searchModel = new UserSearch();
-//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-//
-//        $dataProvider->sort = [
-//            'defaultOrder' => ['created_at' => SORT_DESC],
-//        ];
-//
-//        return $this->render('users', [
-//            'searchModel' => $searchModel,
-//            'dataProvider' => $dataProvider,
-//        ]);
-//    }
+    /**
+     * Lists all User models.
+     *
+     * @return mixed
+     */
+    public function actionUsers()
+    {
+        $searchModel = new UserSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        $dataProvider->sort = [
+            'defaultOrder' => ['created_at' => SORT_DESC],
+        ];
+
+        return $this->render('users', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
 
     /**
      * Displays a single User model.

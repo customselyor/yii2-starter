@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model frontend\modules\account\models\PasswordResetRequestForm */
 
-$this->title = Yii::t('app', 'Request password reset');
+$this->title = Yii::t('frontend', 'Request password reset');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-sign-in-request-password-reset">
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
 
         <div class="form-group">
-            <?= Html::submitButton(Yii::t('app', 'Send'), ['class' => 'btn btn-primary']) ?>
+            <?= Html::submitButton(Yii::t('frontend', 'Send'), ['class' => 'btn btn-primary']) ?>
         </div>
 
     <?php ActiveForm::end() ?>

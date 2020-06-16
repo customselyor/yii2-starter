@@ -153,32 +153,6 @@ class PostCategory extends \yii\db\ActiveRecord
         ];
     }
 
-//    public function beforeSave($insert)
-//    {
-//
-//        if (!parent::beforeSave($insert)) {
-//
-//            return false;
-//
-//        }
-//
-//        if ($insert) {
-//
-//            $query = new Query();
-//            echo "<pre>";
-//            print_r($this->slug_oz);
-//            die();
-//            $query->select('max(TypeProduct_ID) as TypeProduct_ID')->from('ms_typeproduct')->limit(1)->Scalar();
-//
-//            $UrutTP = 'TP' + substr('00', intval($query) + 1);
-//
-//
-//            $this->TypeProduct_ID = $UrutTP;
-//
-//        }
-//
-//        return parent::beforeSave($insert);
-//    }
 
     /**
      * {@inheritdoc}

@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model common\models\PostCategory */
 
 $this->title = Yii::t('app', 'Create');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Post Categories'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Widgets'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="post-category-create">

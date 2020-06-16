@@ -8,7 +8,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel backend\models\search\PostsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Posts');
+$this->title = Yii::t('app', 'Widget items');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="posts-index">

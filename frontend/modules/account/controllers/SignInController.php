@@ -96,9 +96,6 @@ class SignInController extends Controller
      */
     public function actionSignup()
     {
-
-
-
         if (Yii::$app->keyStorage->get('frontend.registration')) {
             $model = new SignupForm();
             if ($model->load(Yii::$app->request->post())) {

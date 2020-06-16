@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel backend\models\search\PostCategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Post Categories');
+$this->title = Yii::t('app', 'Widgets');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="post-category-index">

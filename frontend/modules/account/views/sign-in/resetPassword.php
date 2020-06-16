@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model frontend\modules\account\models\ResetPasswordForm */
 
-$this->title = Yii::t('app', 'Reset password');
+$this->title = Yii::t('frontend', 'Reset password');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-sign-in-eset-password">
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= $form->field($model, 'password_confirm')->passwordInput(['maxlength' => true]) ?>
 
         <div class="form-group">
-            <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-primary']) ?>
+            <?= Html::submitButton(Yii::t('frontend', 'Save'), ['class' => 'btn btn-primary']) ?>
         </div>
 
     <?php ActiveForm::end() ?>

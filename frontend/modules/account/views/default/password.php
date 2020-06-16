@@ -7,8 +7,8 @@ use yii\widgets\ActiveForm;
 /* @var $model frontend\modules\account\models\PasswordForm */
 /* @var $form yii\widgets\ActiveForm */
 
-$this->title = Yii::t('app', 'Change password');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Settings'), 'url' => ['settings']];
+$this->title = Yii::t('frontend', 'Change password');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('frontend', 'Settings'), 'url' => ['settings']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-default-password">
@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $form->field($model, 'password_confirm')->passwordInput(['maxlength' => true])?>
 
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Update'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::submitButton(Yii::t('frontend', 'Update'), ['class' => 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end() ?>

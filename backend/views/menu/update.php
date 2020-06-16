@@ -217,7 +217,6 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
                     id: id,
                 },
                 success: function (data) {
-                    console.log(data.data);
                     if (data.status){
                         $('#text').val(data.data.titleuz);
                         $('#href').val("/"+data.data.sluguz);
@@ -241,8 +240,7 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
                 data: {
                     id: id,
                 },
-                success: function (data) {
-                    console.log(data.data);
+                success: function (data) { 
                     if (data.status){
                         $('#text').val(data.data.titleuz);
                         $('#href').val("/"+data.data.sluguz);

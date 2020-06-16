@@ -1,27 +1,13 @@
 <?php
-
 return [
+    'class' => 'codemix\localeurls\UrlManager',
+    'languages' => ['uz', 'oz', 'ru', 'en'], // List all supported languages here
     'enablePrettyUrl' => true,
-//    'enableStrictParsing' => true,
     'showScriptName' => false,
     'rules' => [
-        ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/articles']],
-        ['class' => 'yii\rest\UrlRule', 'controller' => 'posts'],
+        'defaultRoute' => 'site/index',
+        '<slug>' => 'site/view',
+//        'category/<slug>' => 'site/category',
     ],
-
-//    'class' => 'yii\web\UrlManager',
-//    'enablePrettyUrl' => true,
-//    'showScriptName' => false,
-//    'rules' => [
-//        // Index page
-//        '' => 'site/index',
-//        // Pages
-//        'page/<slug>' => 'page/view',
-//        // Articles
-//        'article/page/<page>' => 'article/index',
-//        'article/index' => 'article/index',
-//        'article/<slug>' => 'article/view',
-//        'article/category/<slug>' => 'article/category',
-//        'article/tag/<slug>' => 'article/tag',
-//    ],
 ];
+

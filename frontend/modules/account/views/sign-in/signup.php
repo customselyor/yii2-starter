@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model frontend\modules\account\models\SignupForm */
 
-$this->title = Yii::t('app', 'Signup');
+$this->title = Yii::t('frontend', 'Signup');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-sign-in-signup">
@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
 
         <div class="form-group">
-            <?= Html::submitButton(Yii::t('app', 'Signup'), ['class' => 'btn btn-primary']) ?>
+            <?= Html::submitButton(Yii::t('frontend', 'Signup'), ['class' => 'btn btn-primary']) ?>
         </div>
 
     <?php ActiveForm::end() ?>

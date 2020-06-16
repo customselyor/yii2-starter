@@ -250,7 +250,7 @@ use vova07\fileapi\Widget as FileApi;
                     'dateFormat' => "d-m-Y",
                     'time_24hr' => false,
                 ],
-            ])->label(false) ?>
+            ]) ?>
 
             <?php $model->status = 1; ?>
             <?= $form->field($model, 'status')->checkbox(['label' => Yii::t('app', 'Activate')]) ?>

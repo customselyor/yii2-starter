@@ -9,12 +9,13 @@ use omgdef\multilingual\MultilingualQuery;
  *
  * @see \common\models\Posts
  */
-class PostsQuery extends  MultilingualQuery
+class PostsQuery extends MultilingualQuery
 {
     public function active()
     {
         return $this->andWhere('[[status]]=1');
     }
+
     /**
      * @return $this
      */
@@ -23,6 +24,15 @@ class PostsQuery extends  MultilingualQuery
         $this->andWhere('{{%posts}}.parent_id IS NULL');
 
         return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function slug($slug)
+    {
+        return $this->joinWith(['postsTranslations'])
+            ->andWhere(['slug' => $slug]);
     }
 
 

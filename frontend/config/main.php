@@ -24,7 +24,7 @@ $config = [
     'components' => [
         'jwt' => [
             'class' => \sizeg\jwt\Jwt::class,
-            'key' => 'secret',
+            'key' => env('BACKEND_COOKIE_VALIDATION_KEY'),
             // You have to configure ValidationData informing all claims you want to validate the token.
             'jwtValidationData' => \common\components\JwtValidationData::class,
         ],
@@ -52,9 +52,6 @@ $config = [
         'urlManager' => require __DIR__ . '/_urlManager.php',
         'cache' => require __DIR__ . '/_cache.php',
     ],
-//    'as beforeAction' => [
-//        'class' => 'common\behaviors\LastActionBehavior',
-//    ],
     'params' => $params,
 ];
 

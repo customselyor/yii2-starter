@@ -10,14 +10,14 @@ use vova07\fileapi\Widget as FileApi;
 /* @var $model common\models\UserProfile */
 /* @var $form yii\widgets\ActiveForm */
 
-$this->title = Yii::t('app', 'Settings');
+$this->title = Yii::t('frontend', 'Settings');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-default-settings">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Change password'), ['password'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('frontend', 'Change password'), ['password'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php $form = ActiveForm::begin(); ?>
@@ -48,8 +48,8 @@ $this->params['breadcrumbs'][] = $this->title;
     ]) ?>
 
     <?= $form->field($model, 'gender')->dropDownlist([
-        UserProfile::GENDER_MALE => Yii::t('app', 'Male'),
-        UserProfile::GENDER_FEMALE => Yii::t('app', 'Female'),
+        UserProfile::GENDER_MALE => Yii::t('frontend', 'Male'),
+        UserProfile::GENDER_FEMALE => Yii::t('frontend', 'Female'),
     ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'website')->textInput(['maxlength' => true]) ?>
@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $form->field($model, 'other')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Update'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::submitButton(Yii::t('frontend', 'Update'), ['class' => 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end() ?>

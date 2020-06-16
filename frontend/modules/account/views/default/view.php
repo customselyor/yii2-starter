@@ -8,7 +8,7 @@ use common\models\UserProfile;
 /* @var $model common\models\User */
 
 $this->title = $model->username;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Users'), 'url' => ['users']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('frontend', 'Users'), 'url' => ['users']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="account-default-view">
@@ -26,34 +26,34 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             [
-                'attribute' => Yii::t('app', 'Firstname'),
+                'attribute' => Yii::t('frontend', 'Firstname'),
                 'value' => $profile->firstname,
                 'visible' => $profile->firstname !== null,
             ],
             [
-                'attribute' => Yii::t('app', 'Lastname'),
+                'attribute' => Yii::t('frontend', 'Lastname'),
                 'value' => $profile->lastname,
                 'visible' => $profile->lastname !== null,
             ],
             [
-                'attribute' => Yii::t('app', 'Birthday'),
+                'attribute' => Yii::t('frontend', 'Birthday'),
                 'format' => 'date',
                 'value' => $profile->birthday,
                 'visible' => $profile->birthday !== null,
             ],
             [
-                'attribute' => Yii::t('app', 'Gender'),
-                'value' => $profile->gender == UserProfile::GENDER_MALE ? Yii::t('app', 'Male') : Yii::t('app', 'Female'),
+                'attribute' => Yii::t('frontend', 'Gender'),
+                'value' => $profile->gender == UserProfile::GENDER_MALE ? Yii::t('frontend', 'Male') : Yii::t('frontend', 'Female'),
                 'visible' => $profile->gender !== null,
             ],
             [
-                'attribute' => Yii::t('app', 'Website'),
+                'attribute' => Yii::t('frontend', 'Website'),
                 'format' => 'raw',
                 'value' => Html::a($profile->website, $profile->website, ['target'=>'_blank']),
                 'visible' => $profile->website !== null,
             ],
             [
-                'attribute' => Yii::t('app', 'Other'),
+                'attribute' => Yii::t('frontend', 'Other'),
                 'value' => $profile->other,
                 'visible' => $profile->other !== null,
             ],
@@ -64,7 +64,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?php if ($model->id !== Yii::$app->user->id) {
-            echo Html::a(Yii::t('app', 'Send email'), ['message', 'id' => $model->id], ['class' => 'btn btn-success']);
+            echo Html::a(Yii::t('frontend', 'Send email'), ['message', 'id' => $model->id], ['class' => 'btn btn-success']);
         } ?>
     </p>
 </div>
