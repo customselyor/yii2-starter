@@ -9,7 +9,6 @@
     - [Authentication](#authentication)
     - [Configure your web server](#configure-your-web-server)
     - [Single domain installtion](#single-domain-installation)
-    - [Video instruction](#video-instruction)
 - [Vagrant installation](#vagrant-installation)
 
 ## Before you begin
@@ -175,9 +174,6 @@ RewriteCond %{REQUEST_URI} ^(.*)$
 RewriteRule ^(.*)$ frontend/web/$1
 ```
 
-### Video instruction
-
-[https://www.youtube.com/watch?v=XAC5joagA70](https://www.youtube.com/watch?v=XAC5joagA70)
 
 ## Vagrant installation
 
