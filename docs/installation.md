@@ -35,7 +35,7 @@ https://github.com/Beaten-Sect0r/yii2-core/archive/master.zip
 #### Or clone repository manually
 
 ```bash
-git clone https://github.com/Beaten-Sect0r/yii2-core.git
+git clone https://github.com/customselyor/yii2-starter.git
 ```
 
 #### Install composer dependencies
