@@ -22,7 +22,7 @@ It covers typical use cases for a new project and will help you not to waste you
 ## Features
 
 - Beautiful and open source dashboard theme for backend [AdminLTE 2](http://almsaeedstudio.com/AdminLTE)
-- Translations: English, Russian
+- Translations: English, Russian, Uzbek latin, Uzbek cyrillic
 - Sign in, sign up, profile, email activation etc
 - User management
 - Content management components: articles, categories, tags, static pages, editable menu
