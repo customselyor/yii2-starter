@@ -17,14 +17,6 @@ If you do not have [Composer](http://getcomposer.org), you may install it by fol
 
 It uses [asset-packagist](https://asset-packagist.org) for managing bower and npm package dependencies through Composer. Also you can use [asset-plugin](https://packagist.org/packages/fxp/composer-asset-plugin), as in earlier versions, but it works slowly.
 
-### Get source code via Composer
-
-You can install this application template with `composer` using the following command:
-
-```bash
-composer create-project --prefer-dist --stability=dev beaten-sect0r/yii2-core
-```
-
 ### Get source code
 
 #### Download sources
