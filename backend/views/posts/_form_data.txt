@@ -1,0 +1,111 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
+/* @var $this yii\web\View */
+/* @var $model common\models\Posts */
+/* @var $form yii\widgets\ActiveForm */
+?>
+
+<div class="posts-form">
+
+    <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'category_id')->textInput() ?>
+
+    <?= $form->field($model, 'lavozim_id')->textInput() ?>
+
+    <?= $form->field($model, 'gender_id')->textInput() ?>
+
+    <?= $form->field($model, 'status')->textInput() ?>
+
+    <?= $form->field($model, 'is_favorite')->textInput() ?>
+
+    <?= $form->field($model, 'date_of_birth')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'year')->textInput() ?>
+
+    <?= $form->field($model, 'month')->textInput() ?>
+
+    <?= $form->field($model, 'day')->textInput() ?>
+
+    <?= $form->field($model, 'age')->textInput() ?>
+
+    <?= $form->field($model, 'fax')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'fax2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'email2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone2')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone3')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'passport_seria')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'passport_number')->textInput() ?>
+
+    <?= $form->field($model, 'inn')->textInput() ?>
+
+    <?= $form->field($model, 'avatar')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'logo')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'icon')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'og_image')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'detail_image')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'sort_index')->textInput() ?>
+
+    <?= $form->field($model, 'urlcount')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'map')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'latitude')->textInput() ?>
+
+    <?= $form->field($model, 'longitude')->textInput() ?>
+
+    <?= $form->field($model, 'hits_count')->textInput() ?>
+
+    <?= $form->field($model, 'parent_id')->textInput() ?>
+
+    <?= $form->field($model, 'published_at')->widget(\bs\Flatpickr\FlatpickrWidget::class, [
+        'locale' => strtolower(substr(Yii::$app->language, 0, 2)),
+        'plugins' => [
+            'confirmDate' => [
+                'confirmIcon' => "<i class='fa fa-check'></i>",
+                'confirmText' => 'OK',
+                'showAlways' => false,
+                'theme' => 'light',
+            ],
+        ],
+        'groupBtnShow' => true,
+        'options' => [
+            'class' => 'form-control',
+        ],
+        'clientOptions' => [
+            'allowInput' => false,
+            // 'defaultDate' => $model->date ? date('d-m-Y', $model->date) : null,
+            'enableTime' => false,
+            'dateFormat' => "d-m-Y",
+            'time_24hr' => false,
+        ],
+    ])->label(false) ?>
+
+
+    <div class="form-group">
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+    </div>
+
+    <?php ActiveForm::end(); ?>
+
+</div>

@@ -1,0 +1,6 @@
+olmaliq
+tdtuof_yiiapp
+fGs3sppy
+
+<!--                                       <h2 class="timer count-title count-number faculty-a" data-to="--><?//= $v->hits_count ?><!--" data-speed="1500"></h2>-->
+
