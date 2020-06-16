@@ -30,7 +30,7 @@ composer create-project --prefer-dist --stability=dev beaten-sect0r/yii2-core
 
 #### Download sources
 
-https://github.com/Beaten-Sect0r/yii2-core/archive/master.zip
+https://github.com/customselyor/yii2-starter/archive/master.zip
 
 #### Or clone repository manually
 
